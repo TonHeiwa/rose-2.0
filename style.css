@@ -1,0 +1,130 @@
+body {
+    background: #fadede;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 300px; /* Reduzindo a largura máxima para telas menores */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Centralizando o conteúdo */
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: #FE7696;
+    font-size: 20px; /* Reduzindo o tamanho da fonte */
+    margin-top: 20px; /* Espaço acima do título */
+}
+
+.rose {
+    margin-top: 20px; /* Espaço acima da rosa */
+}
+
+.petal {
+    width: 10px; /* Reduzindo o tamanho das pétalas */
+    height: 10px; /* Reduzindo o tamanho das pétalas */
+    background: #fe7696;
+    border-radius: 0px 50%;
+    position: absolute;
+    box-shadow: 0 0 3px #D1123F; /* Reduzindo o tamanho da sombra */
+    z-index: 2;
+    transform-origin: bottom right;
+}
+
+.petal:nth-child(2) {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    background: #fe7696;
+}
+
+.petal:nth-child(3) {
+    width: 7px; /* Reduzindo o tamanho das pétalas */
+    height: 7px; /* Reduzindo o tamanho das pétalas */
+    background: #f03a64;
+    top: -5px; /* Ajustando a posição da pétala */
+    left: 3px; /* Ajustando a posição da pétala */
+}
+
+.petal:nth-child(4) {
+    transform: rotate(90deg);
+    width: 7px; /* Reduzindo o tamanho das pétalas */
+    height: 7px; /* Reduzindo o tamanho das pétalas */
+    background: #f03a64;
+    top: -5px; /* Ajustando a posição da pétala */
+    left: 3px; /* Ajustando a posição da pétala */
+}
+
+.petal:nth-child(5) {
+    width: 10px; /* Reduzindo o tamanho das pétalas */
+    height: 10px; /* Reduzindo o tamanho das pétalas */
+    border-radius: 4px; /* Reduzindo o tamanho das pétalas */
+    top: -7px; /* Ajustando a posição da pétala */
+    left: 5px; /* Ajustando a posição da pétala */
+    background: #d1123f;
+}
+
+.leaf {
+    position: absolute;
+    top: 30px; /* Ajustando a posição da folha */
+    left: 20px; /* Ajustando a posição da folha */
+}
+
+.stem {
+    width: 50px; /* Reduzindo o comprimento do caule */
+    height: 10px; /* Reduzindo a espessura do caule */
+    background: transparent;
+    border: 2px solid #8ac78a; /* Reduzindo a espessura do caule */
+    border-color: #77a377 transparent transparent transparent;
+    border-radius: 50% 50%;
+    transform: rotate(100deg);
+}
+
+.leafs {
+    width: 10px; /* Reduzindo o tamanho da folha */
+    height: 10px; /* Reduzindo o tamanho da folha */
+    border-radius: 0px 50%;
+    background: #77a377;
+    position: absolute;
+    top: 0;
+    left: 25px; /* Ajustando a posição da folha */
+    z-index: 49;
+}
+
+.leafs:nth-child(2) {
+    width: 7px; /* Reduzindo o tamanho da folha */
+    height: 7px; /* Reduzindo o tamanho da folha */
+    top: 15px; /* Ajustando a posição da folha */
+    left: 35px; /* Ajustando a posição da folha */
+    transform: rotate(120deg);
+}
+
+@keyframes yidon {
+    50% {
+        transform: translateY(15%); /* Reduzindo a amplitude da animação */
+    }
+    100% {
+        transform: translateY(20%); /* Reduzindo a amplitude da animação */
+    }
+}
+
+@keyframes zhankai1 {
+    50% {
+        transform: rotate(110deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes zhankai2 {
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
