@@ -6,31 +6,42 @@ body {
 
 .container {
     width: 100%;
-    max-width: 300px; /* Reduzindo a largura máxima para telas menores */
+    max-width: 300px;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    text-align: center; /* Centralizando o conteúdo */
+    text-align: center;
 }
 
 h1 {
     font-family: 'Sacramento', cursive;
     color: #FE7696;
-    font-size: 20px; /* Reduzindo o tamanho da fonte */
-    margin-top: 20px; /* Espaço acima do título */
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.letter {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    display: inline-block;
 }
 
 .rose {
-    margin-top: 20px; /* Espaço acima da rosa */
+    width: 90%;
+    max-width: 200px;
+    height: auto;
+    position: relative;
+    margin: 20px auto;
 }
 
 .petal {
-    width: 10px; /* Reduzindo o tamanho das pétalas */
-    height: 10px; /* Reduzindo o tamanho das pétalas */
+    width: 20px;
+    height: 20px;
     background: #fe7696;
-    border-radius: 0px 50%;
+    border-radius: 50%;
     position: absolute;
-    box-shadow: 0 0 3px #D1123F; /* Reduzindo o tamanho da sombra */
+    box-shadow: 0 0 3px #D1123F;
     z-index: 2;
     transform-origin: bottom right;
 }
@@ -39,75 +50,76 @@ h1 {
     transform-origin: right bottom;
     transform: rotate(90deg);
     background: #fe7696;
+    left: -10px;
 }
 
 .petal:nth-child(3) {
-    width: 7px; /* Reduzindo o tamanho das pétalas */
-    height: 7px; /* Reduzindo o tamanho das pétalas */
+    width: 15px;
+    height: 15px;
     background: #f03a64;
-    top: -5px; /* Ajustando a posição da pétala */
-    left: 3px; /* Ajustando a posição da pétala */
+    top: -5px;
+    left: 3px;
 }
 
 .petal:nth-child(4) {
     transform: rotate(90deg);
-    width: 7px; /* Reduzindo o tamanho das pétalas */
-    height: 7px; /* Reduzindo o tamanho das pétalas */
+    width: 15px;
+    height: 15px;
     background: #f03a64;
-    top: -5px; /* Ajustando a posição da pétala */
-    left: 3px; /* Ajustando a posição da pétala */
+    top: -5px;
+    left: 3px;
 }
 
 .petal:nth-child(5) {
-    width: 10px; /* Reduzindo o tamanho das pétalas */
-    height: 10px; /* Reduzindo o tamanho das pétalas */
-    border-radius: 4px; /* Reduzindo o tamanho das pétalas */
-    top: -7px; /* Ajustando a posição da pétala */
-    left: 5px; /* Ajustando a posição da pétala */
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    top: -7px;
+    left: 5px;
     background: #d1123f;
 }
 
 .leaf {
     position: absolute;
-    top: 30px; /* Ajustando a posição da folha */
-    left: 20px; /* Ajustando a posição da folha */
+    top: 30px;
+    left: 20px;
 }
 
 .stem {
-    width: 50px; /* Reduzindo o comprimento do caule */
-    height: 10px; /* Reduzindo a espessura do caule */
+    width: 60px;
+    height: 10px;
     background: transparent;
-    border: 2px solid #8ac78a; /* Reduzindo a espessura do caule */
+    border: 2px solid #8ac78a;
     border-color: #77a377 transparent transparent transparent;
     border-radius: 50% 50%;
     transform: rotate(100deg);
 }
 
 .leafs {
-    width: 10px; /* Reduzindo o tamanho da folha */
-    height: 10px; /* Reduzindo o tamanho da folha */
-    border-radius: 0px 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     background: #77a377;
     position: absolute;
     top: 0;
-    left: 25px; /* Ajustando a posição da folha */
+    left: 25px;
     z-index: 49;
 }
 
 .leafs:nth-child(2) {
-    width: 7px; /* Reduzindo o tamanho da folha */
-    height: 7px; /* Reduzindo o tamanho da folha */
-    top: 15px; /* Ajustando a posição da folha */
-    left: 35px; /* Ajustando a posição da folha */
+    width: 15px;
+    height: 15px;
+    top: 15px;
+    left: 35px;
     transform: rotate(120deg);
 }
 
 @keyframes yidon {
     50% {
-        transform: translateY(15%); /* Reduzindo a amplitude da animação */
+        transform: translateY(15%);
     }
     100% {
-        transform: translateY(20%); /* Reduzindo a amplitude da animação */
+        transform: translateY(20%);
     }
 }
 
